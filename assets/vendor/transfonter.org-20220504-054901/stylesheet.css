@@ -1,0 +1,216 @@
+@font-face {
+    font-family: 'DB Airy Caps Blk It';
+    src: url('DBAiry-CapsBlkIt.woff2') format('woff2'),
+        url('DBAiry-CapsBlkIt.woff') format('woff');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'DB Airy Caps It';
+    src: url('DBAiry-CapsIt.woff2') format('woff2'),
+        url('DBAiry-CapsIt.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'DB Airy Caps Bd';
+    src: url('DBAiry-CapsBd.woff2') format('woff2'),
+        url('DBAiry-CapsBd.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'DB Airy Caps Bd It';
+    src: url('DBAiry-CapsBdIt.woff2') format('woff2'),
+        url('DBAiry-CapsBdIt.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'DB Airy Caps Blk';
+    src: url('DBAiry-CapsBlk.woff2') format('woff2'),
+        url('DBAiry-CapsBlk.woff') format('woff');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'DB Airy Caps';
+    src: url('DBAiry-Caps.woff2') format('woff2'),
+        url('DBAiry-Caps.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'DB Airy Caps Li';
+    src: url('DBAiry-CapsLi.woff2') format('woff2'),
+        url('DBAiry-CapsLi.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'DB Airy Caps';
+    src: url('DBAiry-CapsThin.woff2') format('woff2'),
+        url('DBAiry-CapsThin.woff') format('woff');
+    font-weight: 100;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'DB Airy Caps Med';
+    src: url('DBAiry-CapsMed.woff2') format('woff2'),
+        url('DBAiry-CapsMed.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'DB Airy Std Bd';
+    src: url('DBAiry-StdBd.woff2') format('woff2'),
+        url('DBAiry-StdBd.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'DB Airy Caps Med It';
+    src: url('DBAiry-CapsMedIt.woff2') format('woff2'),
+        url('DBAiry-CapsMedIt.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'DB Airy Std Bd It';
+    src: url('DBAiry-StdBdIt.woff2') format('woff2'),
+        url('DBAiry-StdBdIt.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'DB Airy Caps Thin It';
+    src: url('DBAiry-CapsThinIt.woff2') format('woff2'),
+        url('DBAiry-CapsThinIt.woff') format('woff');
+    font-weight: 100;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'DB Airy Caps Li It';
+    src: url('DBAiry-CapsLiIt.woff2') format('woff2'),
+        url('DBAiry-CapsLiIt.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'DB Airy Std Blk It';
+    src: url('DBAiry-StdBlkIt.woff2') format('woff2'),
+        url('DBAiry-StdBlkIt.woff') format('woff');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'DB Airy Std Li It';
+    src: url('DBAiry-StdLiIt.woff2') format('woff2'),
+        url('DBAiry-StdLiIt.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'DB Airy Std Thin It';
+    src: url('DBAiry-StdThinIt.woff2') format('woff2'),
+        url('DBAiry-StdThinIt.woff') format('woff');
+    font-weight: 100;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'DB Airy Std';
+    src: url('DBAiry-StdThin.woff2') format('woff2'),
+        url('DBAiry-StdThin.woff') format('woff');
+    font-weight: 100;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'DB Airy Std Li';
+    src: url('DBAiry-StdLi.woff2') format('woff2'),
+        url('DBAiry-StdLi.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'DB Airy Std Blk';
+    src: url('DBAiry-StdBlk.woff2') format('woff2'),
+        url('DBAiry-StdBlk.woff') format('woff');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'DB Airy Std Med It';
+    src: url('DBAiry-StdMedIt.woff2') format('woff2'),
+        url('DBAiry-StdMedIt.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'DB Airy Std It';
+    src: url('DBAiry-StdIt.woff2') format('woff2'),
+        url('DBAiry-StdIt.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'DB Airy Std Med';
+    src: url('DBAiry-StdMed.woff2') format('woff2'),
+        url('DBAiry-StdMed.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'DB Airy Std';
+    src: url('DBAiry-Std.woff2') format('woff2'),
+        url('DBAiry-Std.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+

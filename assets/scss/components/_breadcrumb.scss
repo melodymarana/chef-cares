@@ -1,0 +1,31 @@
+.breadcrumb {
+  @extend .mb-4, .mb-md-0;
+
+  a {
+    @extend .text-dark, .text-decoration-none;
+  }
+
+  &-item {
+    @extend .fs-6, .fw-medium, .d-flex, .align-items-center, .py-4;;
+  
+    @include media-breakpoint-down(md) {
+      display: none !important;
+    }
+  }
+
+  &-item.active {
+    color: var(--primary-medium) !important;
+  }
+}
+
+.breadcrumb-item + .breadcrumb-item {
+  @extend .ps-3;
+
+  &::before {
+    content: fa-content($fa-var-angle-right);
+    color: var(--text-muted);
+    font-family: $fa-style-family;
+    font-size: 0.875rem;
+    padding-right: 1rem;
+  }
+}

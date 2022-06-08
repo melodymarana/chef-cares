@@ -1,0 +1,23 @@
+.activities {
+  &-academy {
+    .page-header {
+      @extend .bg-academy;
+    }
+    .main-content {
+      @extend .pt-2, .pt-md-0, .pb-4;
+    }
+  }
+
+  &-donation {
+    background-color: var(--primary-muted);
+    .page-header {
+      @extend .bg-donation;
+    }
+  }
+
+  &-content {
+    .follow-us {
+      @extend .my-3, .py-3, .py-md-5;
+    }
+  }
+}

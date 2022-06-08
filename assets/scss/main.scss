@@ -1,0 +1,19 @@
+@import 'custom-variables';
+
+@import 'bootstrap/bootstrap.scss';
+@import 'fontawesome-6pro/fontawesome.scss';
+@import 'fontawesome-6pro/brands.scss';
+@import 'fontawesome-6pro/regular.scss';
+@import 'fontawesome-6pro/solid.scss';
+@import 'components/all';
+@import 'page/all';
+
+html,
+body {
+  overflow-x: hidden;
+}
+
+body {
+  font-family: 'DB Airy Std', $font-family-sans-serif;
+  color: $dark;
+}

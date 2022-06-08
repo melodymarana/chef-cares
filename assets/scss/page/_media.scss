@@ -1,0 +1,13 @@
+.media {
+  .section {
+    @extend %section-padding;
+  }
+
+  .section-video {
+    @extend .pt-3;
+
+    iframe {
+      @extend .mw-100;
+    }
+  }
+}

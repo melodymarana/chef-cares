@@ -1,0 +1,90 @@
+:root {
+  --primary: #81a6cf;
+  --light: #dce2e7;
+  --white: #fff;
+  --smoke: #f8f8f8;
+  --primary-muted: #f7fafd;
+  --primary-light: #c4d6ea;
+  --primary-medium: #6e90b6;
+  --primary-dark: #56789c;
+  --danger: #e7272b;
+  --danger-muted: #ffefef;
+  --danger-light: #f17f81;
+  --danger-dark: #ab0003;
+  --danger-medium: #d50b0f;
+  --success-muted: #f2ffe9;
+  --success-medium: #5fbb1d;
+  --success-light: #a8d985;
+  --success: #84d14c;
+  --text: #212529;
+  --text-muted: #d1d7dd;
+  --text-medium: #7d8288;
+  --text-placeholder: #bcc4cb;
+}
+
+// colors
+$primary: #81a6cf !default;
+$danger: #e7272b !default;
+$light: #dce2e7 !default;
+$dark: #212529 !default;
+$muted: var(--text-muted) !default;
+
+// font size
+$h1-font-size: 3.375rem !default; //54
+$h2-font-size: 2.375rem !default; //38
+$h3-font-size: 1.6875rem !default; //27
+$h4-font-size: 1.5rem !default; //24
+$h5-font-size: 1.3125rem !default; //21px
+$h6-font-size: 1.188rem !default; //19px
+
+$font-sizes: (
+  1: $h1-font-size,
+  2: $h2-font-size,
+  3: $h3-font-size,
+  4: $h4-font-size,
+  5: $h5-font-size,
+  6: $h6-font-size,
+) !default;
+
+$enable-rfs: false !default;
+
+$line-height-sm: 1 !default;
+$headings-line-height: 1.1 !default;
+$container-padding-x: 1.5rem !default;
+$grid-gutter-width: 1rem !default;
+
+//font awesome webfonts
+$fa-font-path: '../vendor/FontAwesome-6Pro/webfonts' !default;
+
+// font family
+$font-style-bold: 'DB Airy Std Med';
+$font-style-bolder: 'DB Airy Std Bd';
+
+//page header
+$chefs-page-header: url('https://via.placeholder.com/1200x300');
+$banner-default: url('https://via.placeholder.com/1200x320');
+
+$input-placeholder-color: var(--text-placeholder);
+$input-height: 38px;
+$input-padding-x: 1rem;
+
+$form-label-margin-bottom: 0 !default;
+$form-label-color: var(--text-medium);
+$form-label-font-size: $h6-font-size;
+
+$form-select-bg-size: 16px 14px !default;
+$form-select-indicator: url('../img/caret-down-solid.svg');
+
+$form-feedback-icon-valid: none !default;
+$form-feedback-icon-invalid: none !default;
+
+$form-check-input-width: 16px;
+$form-check-padding-start: 28px;
+
+$form-select-disabled-color: var(--text-placeholder) !default;
+$form-select-disabled-bg: #e5ebef !default;
+
+$form-file-button-bg: #fff !default;
+$form-file-button-hover-bg: #fff;
+
+$alert-border-radius: 12px !default;

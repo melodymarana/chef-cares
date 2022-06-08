@@ -1,0 +1,32 @@
+%section-padding {
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+
+  @include media-breakpoint-down(md) {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+  }
+}
+
+@mixin hover-color($color) {
+  &:hover, &:focus {
+    color: $color !important;
+  }
+}
+
+@mixin transition($property: all, $duration: 0.3s, $timing-function: ease-in-out, $delay: initial) {
+  transition-property: $property;
+  transition-duration: $duration;
+  transition-timing-function: $timing-function;
+  transition-delay: $delay;
+}
+
+@mixin truncate($line-value: 2, $direction: vertical, $line-height: normal, $white-space: normal) {
+  line-height: $line-height;
+  display: -webkit-box;
+  overflow: hidden;
+  -webkit-line-clamp: $line-value;
+  -webkit-box-orient: $direction;
+  text-overflow: ellipsis;
+  white-space: $white-space;
+}

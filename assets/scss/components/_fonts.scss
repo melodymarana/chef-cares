@@ -1,0 +1,35 @@
+// font style
+.fw {
+  &-light {
+    font-family: 'DB Airy Std Li';
+    font-style: normal;
+  }
+
+  &-normal {
+    font-family: 'DB Airy Std Li';
+    font-weight: 900 !important;
+  }
+
+  &-medium {
+    font-family: 'DB Airy Std';
+    font-weight: 900 !important;
+    font-style: normal;
+  }
+
+  &-bold {
+    font-family: 'DB Airy Std Med';
+    font-weight: 500 !important;
+    font-style: normal;
+  }
+
+  &-bolder {
+    font-family: 'DB Airy Std Med';
+    font-weight: 900 !important;
+    font-style: normal;
+  }
+
+  &-blk {
+    font-family: 'DB Airy Std Blk';
+    font-style: normal;
+  }
+}

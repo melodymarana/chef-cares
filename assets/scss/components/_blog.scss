@@ -1,0 +1,14 @@
+.blog {
+  .heading {
+    @extend .mb-3;
+  }
+
+  .page-title {
+    @extend .justify-content-start, .mb-2;
+    line-height: $line-height-sm;
+  }
+
+  .date {
+    @extend .mb-0, .fw-bold;
+  }
+}

@@ -1,0 +1,52 @@
+.footer {
+  @extend %section-padding, .bg-primary, .text-white, .fs-6, .fw-light;
+  
+  a {
+    @extend .text-white, .text-decoration-none;
+    @include transition();
+
+    &:hover,
+    &:focus {
+      color: var(--primary-light) !important;
+    }
+  }
+
+  &-content {
+    @extend .d-md-flex, .mb-4;
+
+    .brand {
+      width: 120px;
+      height: auto;
+    }
+  }
+
+  .contact-info {
+    .links {
+      @extend .d-flex, .flex-column, .fs-5;
+      line-height: $line-height-sm;
+
+      a {
+        @extend .mb-2;
+      }
+    }
+
+    .address {
+      max-width: 342px;
+    }
+  }
+
+  .social-links {
+    @extend .pe-0;
+
+    .link {
+      @extend .ms-3;
+      font-size: 28px;
+      padding: 0 !important;
+    }
+
+    @include media-breakpoint-down(md) {
+      display: table;
+      margin: auto;
+    }
+  }
+}

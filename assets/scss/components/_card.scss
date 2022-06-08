@@ -1,0 +1,95 @@
+.card {
+  @extend .border-0;
+}
+
+.card-blog {
+  @extend .p-2, .bg-white, .rounded-0, .position-relative, .h-100;
+
+  .card-date {
+    @extend .position-absolute, .bg-white, .p-2, .text-end;
+    top: 0;
+    right: 1rem;
+    height: 57px;
+
+    .date,
+    .month {
+      @extend .fw-blk, .text-primary, .fs-5;
+      line-height: 0.7;
+    }
+
+    .year {
+      @extend .fs-6, .fw-light;
+      color: var(--text-medium);
+      line-height: 0.8;
+    }
+  }
+
+  .card-img {
+    @extend .mb-2;
+  }
+
+  .caption {
+    @extend .fs-6, .mb-0;
+    @include truncate(3);
+    line-height: $line-height-sm !important;
+  }
+}
+
+.card-media {
+  @extend .rounded-0, .position-relative;
+
+  .media-caption {
+    @extend .position-absolute, .w-100;
+    backdrop-filter: blur(8px);
+    background-color: rgba($black, 0.4) !important;
+    padding: 0.75rem 0.875rem; //12px 14px
+    bottom: 0;
+    left: 0;
+
+    .caption {
+      @extend .text-white, .fs-5, .mb-0, .d-flex;
+      @include truncate(3);
+      line-height: $line-height-sm !important;
+
+      &::before {
+        content: fa-content($fa-var-circle-video);
+        font-family: $fa-style-family;
+        font-size: 1.5rem;
+        color: $white;
+        margin-right: 0.5rem;
+      }
+    }
+  }
+}
+
+.card-partners {
+  @extend .bg-white, .rounded-0, .text-center, .px-4;
+
+  .img {
+    @extend .my-4;
+    width: 140px;
+    height: 140px;
+  }
+
+  .title {
+    @extend .fw-bold, .text-dark, .text-center, .mx-auto, .py-0, .mb-3;
+  }
+
+  .caption {
+    @extend .fs-5, .mb-4;
+    line-height: $line-height-sm;
+  }
+
+  .social-links {
+    @extend .mb-3, .mt-2;
+  }
+
+  .link {
+    margin-left: 0.25rem;
+    margin-right: 0.25rem;
+  }
+
+  .icon {
+    font-size: 1.5rem;
+  }
+}

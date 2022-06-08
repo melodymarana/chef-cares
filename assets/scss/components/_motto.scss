@@ -1,0 +1,18 @@
+.motto {
+  @extend .fw-light, .mb-1, .fs-4;
+  text-transform: uppercase;
+
+  @include media-breakpoint-up(md) {
+    font-size: 2.0625rem !important; //33px
+  }
+
+  &-caption {
+    @extend .fw-bold;
+    margin-bottom: 2rem;
+    line-height: $line-height-sm;
+
+    @include media-breakpoint-down(md) {
+      font-size: 2.375rem; //38px
+    }
+  }
+}

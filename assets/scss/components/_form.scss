@@ -1,0 +1,70 @@
+.form {
+  @extend .mb-0;
+
+  .title {
+    @extend .fw-bold, .text-primary, .mb-3;
+    line-height: $line-height-sm;
+  }
+
+  textarea {
+    border-radius: 19px !important;
+  }
+
+  &-label {
+    @extend .fw-medium;
+  }
+
+  &-control,
+  &-select {
+    @extend .rounded-pill, .fs-6;
+    border-color: var(--light);
+    background-color: var(--primary-muted);
+    padding: 0.25rem 1rem;
+  }
+
+  &-check {
+    .form-check-input {
+      @extend .mt-2;
+    }
+
+    .form-label {
+      @extend .fw-normal, .fs-5;
+    }
+  }
+
+  &-action {
+    @extend .d-md-flex, .align-items-center, .w-100;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+
+    .total {
+      @extend .mb-3, .mb-md-0, .me-auto;
+    }
+
+    .amount {
+      @extend .fw-blk, .text-primary, .mb-0;
+      line-height: 0.9;
+    }
+
+    .back {
+      @extend .me-3;
+      min-width: 88px;
+      .icon {
+        font-size: 20px;
+      }
+    }
+  }
+}
+
+.alert {
+  @extend .fs-5;
+
+  .icon {
+    @extend .text-danger, .mb-1;
+    font-size: 20px;
+  }
+
+  &-danger {
+    @include alert-variant(var(--danger-muted), var(--danger-light), $danger);
+  }
+}

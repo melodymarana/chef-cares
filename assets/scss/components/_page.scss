@@ -1,0 +1,83 @@
+.container {
+  max-width: 1008px !important;
+}
+
+.main {
+  @include media-breakpoint-down(md) {
+    margin-top: 4rem; //64px
+  }
+
+  &-content {
+    @extend .d-table, .mx-auto, .w-100;
+    max-width: 624px !important;
+  }
+}
+
+.page-header {
+  height: 220px;
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+
+  .section {
+    @extend .d-flex, .h-100;
+  }
+
+  .title {
+    @extend .text-uppercase;
+  }
+
+  @include media-breakpoint-up(md) {
+    height: 300px;
+  }
+}
+
+.page-title {
+  @extend .fw-bold, .text-primary, .d-flex, .justify-content-center, .mb-4, .text-center; 
+  line-height: $line-height-sm;
+  //line-height: $headings-line-height;
+
+  @include media-breakpoint-down(md) {
+    font-size: $h2-font-size !important;
+  }
+}
+
+.divider {
+  @extend .bg-light, .w-100;
+  height: 8px;
+}
+
+.caption,
+p {
+  @extend .fw-normal;
+}
+
+a {
+  @extend .text-decoration-none;
+}
+
+.text {
+  &-heading {
+    @extend .text-primary, .fw-bold;
+  }
+}
+// Mockup background
+.bg-light {
+  background-color: var(--primary-muted) !important;
+}
+
+.bg-academy {
+  background-image: url('../img/dream-academy.jpg');
+}
+
+.bg-rakrosthai {
+  background-image: url('../img/rakrosthai.jpg');
+}
+
+.bg-donation {
+  background-image: url('../img/our-impact.jpg');
+}
+
+.video-container {
+  @extend .bg-black, .d-flex, .justify-content-center;
+}

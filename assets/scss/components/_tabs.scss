@@ -1,0 +1,23 @@
+.nav-tabs {
+  .nav-link {
+    @extend .flex-fill,
+      .fs-6,
+      .fw-medium,
+      .text-uppercase,
+      .border-top-0,
+      .border-start-0,
+      .border-end-0,
+      .py-2;
+    color: var(--text-muted);
+    border-bottom: 4px solid var(--smoke);
+    &.active {
+      @extend .text-primary;
+      border-color: $primary;
+    }
+  }
+
+  @include media-breakpoint-down(md) {
+    margin-left: -1.5rem;
+    margin-right: -1.5rem;
+  }
+}

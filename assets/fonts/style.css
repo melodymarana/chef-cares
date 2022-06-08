@@ -1,0 +1,70 @@
+@font-face {
+    font-family: 'DB Airy Std Med';
+    src: url('DBAiry-StdMed.eot');
+    src: url('DBAiry-StdMed.eot?#iefix') format('embedded-opentype'),
+        url('DBAiry-StdMed.woff2') format('woff2'),
+        url('DBAiry-StdMed.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'DB Airy Std Li';
+    src: url('DBAiry-StdLi.eot');
+    src: url('DBAiry-StdLi.eot?#iefix') format('embedded-opentype'),
+        url('DBAiry-StdLi.woff2') format('woff2'),
+        url('DBAiry-StdLi.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'DB Airy Std Bd';
+    src: url('DBAiry-StdBd.eot');
+    src: url('DBAiry-StdBd.eot?#iefix') format('embedded-opentype'),
+        url('DBAiry-StdBd.woff2') format('woff2'),
+        url('DBAiry-StdBd.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'DB Airy Std Blk';
+    src: url('DBAiry-StdBlk.eot');
+    src: url('DBAiry-StdBlk.eot?#iefix') format('embedded-opentype'),
+        url('DBAiry-StdBlk.woff2') format('woff2'),
+        url('DBAiry-StdBlk.woff') format('woff');
+    font-weight: 900;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'DB Airy Std';
+    src: url('DBAiry-StdThin.eot');
+    src: url('DBAiry-StdThin.eot?#iefix') format('embedded-opentype'),
+        url('DBAiry-StdThin.woff2') format('woff2'),
+        url('DBAiry-StdThin.woff') format('woff');
+    font-weight: 100;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'DB Airy Std Med';
+    src: url('DBAiry-StdMed.eot');
+    src: url('DBAiry-StdMed.eot?#iefix') format('embedded-opentype'),
+        url('DBAiry-StdMed.woff2') format('woff2'),
+        url('DBAiry-StdMed.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'DB Airy Std';
+    src: url('DBAiry-Std.eot');
+    src: url('DBAiry-Std.eot?#iefix') format('embedded-opentype'),
+        url('DBAiry-Std.woff2') format('woff2'),
+        url('DBAiry-Std.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+

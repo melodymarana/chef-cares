@@ -1,0 +1,303 @@
+.chefs {
+  @extend .bg-light;
+
+  .page-header {
+    background-image: url('../img/our-chefs.jpg');
+  }
+
+  &-content {
+    .chef-name,
+    .fullname {
+      @extend .fw-bold;
+    }
+    .profile-picture {
+      @extend .mt-2, .mt-md-0, .mb-4;
+    }
+    .section-products {
+      @extend %section-padding;
+    }
+  }
+}
+
+.chef-name {
+  @extend .text-primary;
+}
+
+.profile {
+  @extend .text-center;
+
+  &-picture {
+    @extend .d-table, .mx-auto;
+
+    .img {
+      width: 147px;
+      height: 147px;
+    }
+  }
+
+  .chef-name,
+  .fullname {
+    @extend .fw-medium, .mb-0;
+  }
+
+  .social-links {
+    @extend .mb-4;
+    margin-top: 0.75rem;
+
+    .link {
+      @extend .fs-4;
+      margin-left: 0.0625rem;
+      margin-right: 0.0625rem;
+    }
+  }
+
+  .description {
+    @extend .fs-5, .text-start, .mb-4;
+  }
+}
+
+.info {
+  @extend .d-flex, .justify-content-center, .align-items-center;
+
+  .icon {
+    font-size: 0.875rem;
+    margin-right: 0.4375rem;
+    color: var(--text-medium);
+  }
+
+  .text {
+    @extend .fs-6;
+  }
+}
+
+.chefs-list {
+  .item {
+    @extend .mb-3, .mb-md-5;
+  }
+
+  .card {
+    @extend .bg-white, .border-0, .p-0, .position-relative, .mx-auto;
+    border-radius: 9rem 9rem 1rem 1rem;
+    max-width: 272px;
+    overflow: hidden;
+
+    &:hover,
+    &:focus,
+    &.active {
+      .chefs-menu {
+        top: 0;
+        transform: none;
+      }
+    }
+  }
+
+  .profile {
+    &-picture {
+      @extend .p-2, .p-md-3, .mt-0, .mb-1, .mb-md-3;
+
+      .img {
+        @extend .w-100, .h-100;
+      }
+    }
+
+    .chef-name,
+    .fullname {
+      @include media-breakpoint-down(md) {
+        font-size: $h5-font-size !important;
+      }
+    }
+
+    .fullname {
+      @extend .text-capitalize;
+    }
+
+    .info {
+      @extend .mb-2, .mb-md-0;
+
+      .text {
+        @extend .fs-5;
+
+        @include media-breakpoint-down(md) {
+          font-size: $h6-font-size !important;
+        }
+      }
+    }
+
+    .description {
+      @extend .fw-light,
+        .fs-5,
+        .px-1,
+        .px-md-3,
+        .mb-3,
+        .text-center,
+        .d-none,
+        .d-md-block;
+      @include truncate(2);
+      line-height: $headings-line-height !important;
+      color: var(--text-medium);
+    }
+
+    .social-links {
+      @extend .m-0, .py-3;
+      border-top: 1px solid var(--smoke);
+    }
+  }
+
+  .chefs-menu {
+    @extend .position-absolute,
+      .bg-white,
+      .d-flex,
+      .flex-column,
+      .position-relative;
+    top: 100%;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    transform: translateY(100%);
+    transition: all 0.3s ease-in-out;
+    border-radius: 9rem 9rem 1rem 1rem;
+
+    .heading {
+      @extend .d-flex, .flex-column, .align-items-center, .pt-3;
+
+      .icon {
+        color: $primary;
+        font-size: 2rem;
+        margin-bottom: 0.4375rem;
+      }
+
+      .chef-name {
+        @extend .mb-0;
+      }
+
+      .title {
+        @extend .d-flex, .w-100, .position-relative;
+
+        &::before {
+          @extend .position-absolute, .d-table, .m-auto;
+          content: ' ';
+          top: 16px;
+          left: 0;
+          right: 0;
+          width: 190px;
+          height: 4px;
+          border-top: 4px dotted $primary;
+        }
+
+        .img {
+          @extend .bg-white, .mx-auto;
+          padding: 0.5rem 1rem;
+          z-index: 9;
+        }
+      }
+    }
+
+    &::after {
+      @extend .position-absolute;
+      content: ' ';
+      bottom: 0;
+      left: 0;
+      right: 0;
+      height: 20px;
+      background: linear-gradient(to bottom, rgba($white, 0) 0%, $white 50%);
+    }
+
+    .content-scroll {
+      @extend .flex-fill, .mt-2;
+      overflow-y: auto;
+      border-bottom-left-radius: 1rem;
+      border-bottom-right-radius: 1rem;
+    }
+
+    .list-group {
+      &-item {
+        @extend .flex-column,
+          .align-items-start,
+          .rounded-0,
+          .border-top-0,
+          .border-start-0,
+          .border-end-0;
+        border-bottom: 1px solid var(--smoke);
+        padding: 0.75rem;
+
+        .product-img {
+          width: 72px;
+          height: 72px;
+        }
+
+        .wrap {
+          @extend .d-flex, .w-100;
+        }
+
+        .content {
+          @extend .text-start, .flex-fill;
+          padding-left: 0.75rem;
+
+          .title {
+            @extend .fw-medium;
+          }
+
+          .badge {
+            @extend .text-dark;
+            font-size: 1rem;
+            padding: 0.125rem 0.5rem;
+            height: 20px;
+            background-color: var(--primary-light);
+          }
+        }
+      }
+    }
+  }
+}
+
+.chefs-list-all {
+  @extend .bg-white, %section-padding;
+
+  .item {
+    @extend .d-flex, .mb-4;
+
+    .profile-picture {
+      @extend .m-0, .p-0;
+
+      .img {
+        width: 192px;
+        height: 192px;
+
+        @include media-breakpoint-down(md) {
+          width: 112px;
+          height: 112px;
+        }
+      }
+    }
+
+    .profile {
+      @extend .text-start, .ps-3, .ps-md-4, .m-0, .pt-md-3, .flex-fill;
+    }
+
+    .info {
+      @extend .justify-content-start;
+
+      .text {
+        @include media-breakpoint-up(md) {
+          font-size: $h5-font-size;
+        }
+      }
+    }
+
+    .info {
+      @extend .fw-normal;
+    }
+
+    .description {
+      @extend .fw-light, .d-none, .d-md-block, .text-truncate, .mb-1;
+      color: var(--text-medium);
+      line-height: $line-height-sm;
+      white-space: unset;
+      word-break: break-word;
+    }
+
+    .social-links {
+      @extend .mt-1, .mt-md-2, .mb-0;
+    }
+  }
+}

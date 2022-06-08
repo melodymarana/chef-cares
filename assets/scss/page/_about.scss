@@ -1,0 +1,59 @@
+#banner-1,
+#activitiy-1 {
+  @extend .bg-academy;
+}
+
+#banner-2,
+#activitiy-2 {
+  @extend .bg-rakrosthai;
+}
+
+#banner-3,
+#activitiy-3 {
+  @extend .bg-donation;
+}
+
+.about {
+  .caption {
+    @extend .fs-5, .fw-light;
+    font-weight: 900 !important;
+    line-height: $line-height-sm;
+  }
+}
+
+.about-us {
+  @extend .pt-2, %section-padding;
+
+  .description {
+    @extend .d-table, .mx-auto, .text-center;
+    max-width: 624px;
+  }
+}
+
+.our-mission {
+  padding-top: 4rem;
+  padding-bottom: 2.5rem;
+
+  @include media-breakpoint-down(md) {
+    padding-top: 2rem;
+    padding-bottom: 0.5rem;
+  }
+
+  .page-title {
+    @extend .mt-md-3;
+  }
+
+  .item {
+    @extend .mb-4, .d-table, .mx-auto;
+    max-width: 192px;
+    max-height: 192px;
+
+    .img {
+      @extend .mb-2;
+    }
+
+    .caption {
+      @extend .mb-0;
+    }
+  }
+}

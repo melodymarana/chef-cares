@@ -1,0 +1,102 @@
+.btn {
+  @extend .fw-bold,
+    .rounded-pill,
+    .d-flex,
+    .align-items-center,
+    .justify-content-center,
+    .py-0;
+  min-height: 38px;
+  min-width: 152px;
+  font-size: $h5-font-size;
+
+  &-sm {
+    @extend .fs-6, .py-0;
+    min-height: 31px;
+  }
+
+  &-lg {
+    @extend .fs-3;
+    min-width: 172px;
+    min-height: 48px;
+  }
+
+  &:hover,
+  &:focus {
+    border-color: var(--primary-dark);
+  }
+
+  &:disabled,
+  &.disabled {
+    background-color: var(--light);
+    border-color: var(--light);
+    color: var(--text-placeholder);
+  }
+
+  &-primary {
+    @include button-variant(
+      $primary,
+      $primary,
+      $white,
+      $primary,
+      var(--primary-dark),
+      $white,
+      var(--primary-medium),
+      var(--primary-dark),
+      $white,
+      var(--light),
+      var(--light),
+      var(--text-placeholder)
+    );
+  }
+
+  &-light {
+    @include button-variant(
+      $white,
+      $white,
+      $primary,
+      $white,
+      var(--primary-dark),
+      $primary,
+      var(--primary-medium),
+      var(--primary-dark),
+      $primary,
+      var(--light),
+      var(--light),
+      var(--text-placeholder)
+    );
+  }
+
+  &-outline-primary {
+    @include button-variant(
+      $white,
+      $light,
+      $primary,
+      $white,
+      $primary,
+      $primary,
+      var(--primary-muted),
+      $primary,
+      $primary,
+      var(--light),
+      var(--light),
+      var(--text-placeholder)
+    );
+  }
+
+  &-outline-danger {
+    @include button-variant(
+      transparent,
+      $light,
+      $danger,
+      transparent,
+      $danger,
+      $danger,
+      var(--danger-muted),
+      $danger,
+      $danger,
+      var(--light),
+      var(--light),
+      var(--text-placeholder)
+    );
+  }
+}

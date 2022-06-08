@@ -1,0 +1,82 @@
+.payment {
+  @extend .pb-4;
+
+  .title {
+    @extend .d-flex, .align-items-center;
+  }
+
+  .step {
+    @extend .bg-primary,
+      .text-white,
+      .rounded-circle,
+      .fw-bold,
+      .fs-5,
+      .d-flex,
+      .justify-content-center,
+      .align-items-center;
+    margin-right: 12px;
+    width: 32px;
+    height: 32px;
+  }
+
+  .box {
+    @extend .bg-light, .d-flex, .justify-content-center, .py-2, .mb-3;
+
+    @include media-breakpoint-down(md) {
+      margin-left: -1.5rem;
+      margin-right: -1.5rem;
+    }
+  }
+
+  .qr-code {
+    width: 204px;
+    height: 204px;
+  }
+
+  .list {
+    padding-left: 2.75rem; //44px
+
+    .label {
+      @extend .text-primary, .fw-medium, .fs-6;
+    }
+  }
+
+  .upload-file {
+    padding-left: 2.75rem;
+  }
+
+  .form-file {
+    max-width: 298px;
+  }
+
+  .icon {
+    max-width: 160px;
+    margin-top: 4rem;
+    margin-bottom: 2rem;
+  }
+
+  .text-wrap {
+    @extend .text-center, .d-table, .mx-auto, .mb-3;
+    max-width: 342px;
+  }
+
+  &-success {
+    @extend .text-center, .fs-5;
+    line-height: $line-height-sm;
+
+    .icon {
+      max-width: 160px;
+      margin-top: 4rem;
+      margin-bottom: 2rem;
+    }
+
+    .action {
+      @extend .d-flex, .align-items-center, .flex-column, .py-3, .pb-md-4;
+    }
+
+    .btn {
+      @extend .mb-3, .text-uppercase, .w-100;
+      max-width: 304px;
+    }
+  }
+}

@@ -1,0 +1,102 @@
+.products {
+  .page-header {
+    background-image: url('../img/product-chilled.jpg');
+  }
+
+  .content {
+    @extend .d-table, .mx-auto;
+  }
+
+  .item {
+    @extend .position-relative, .overflow-hidden;
+
+    .link {
+      @extend .d-flex;
+    }
+
+    .product-img {
+      @extend .img-fluid, .w-100;
+      object-fit: cover;
+      height: 298px;
+
+      @include media-breakpoint-down(md) {
+        height: 256px;
+      }
+    }
+
+    .product-img-sm {
+      width: 118px;
+      height: 88px;
+    }
+
+    .details {
+      @extend .position-absolute;
+      top: 100%;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      padding: 1rem 0.5rem;
+      transform: translateY(100%);
+      transition: all 0.3s ease-in-out;
+      background-color: rgba($white, 0.95);
+
+      .product-img-sm {
+        @extend .d-table, .mx-auto, .mb-3;
+        width: 118px;
+        height: 88px;
+      }
+
+      .product-title {
+        @extend .text-primary, .fw-bold, .mb-0;
+        @include truncate(2);
+        line-height: $headings-line-height;
+      }
+
+      .info {
+        @extend .fw-light, .justify-content-start, .mb-0;
+      }
+
+      .list {
+        @extend .mb-0;
+
+        li {
+          @extend .d-flex, .justify-content-between, .mb-0;
+          line-height: $line-height-sm;
+        }
+
+        p {
+          @extend .mb-0, .fs-6, .fw-light;
+        }
+
+        .heading {
+          @extend .fw-medium;
+        }
+      }
+
+      @include media-breakpoint-down(md) {
+        position: relative !important;
+        top: 0;
+        transform: none !important;
+        display: flex;
+        margin-top: 0.5rem;
+        padding: 0;
+
+        .wrap {
+          margin-left: 1rem;
+        }
+      }
+    }
+
+    &:hover,
+    &:focus {
+      .details {
+        top: 0;
+        transform: none;
+      }
+    }
+
+    @include media-breakpoint-down(md) {
+      margin-bottom: 2rem;
+    }
+  }
+}
